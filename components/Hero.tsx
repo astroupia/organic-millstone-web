@@ -1,5 +1,7 @@
 import React from "react";
 import { FlipWords } from "./ui/flip-words";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Hero = () => {
     const words = ["better", "Greater", "Excellent", "modern"];
@@ -25,12 +27,9 @@ const Hero = () => {
           replace hazardous food production methods with our state-of-the-art,
           organic products.
         </p>
-        <a
-          href="#cta"
-          className="inline-block bg-white hover:bg-orange-600 text-green-700 py-3 px-6 rounded-lg text-lg font-medium transition duration-300"
-        >
-          Explore
-        </a>
+        <Button size="lg" asChild className="w-full sm:w-fit bg-white text-green-700 hover:bg-green-700 hover:text-white">
+            <Link href="#ProductSection">Explore</Link>
+          </Button>
       </div>
       </div>
     </div>
