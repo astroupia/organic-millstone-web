@@ -52,13 +52,13 @@ const ProductPage = () => {
 
   return (
     <section className="py-5 md:py-10">
-    <div className="p-5 flex flex-col 2xl:gap-0">
-      <div className="flex flex-col justify-center md:ml-3 ml-1 gap-3 flex-1">
+    <div className="p-5 flex flex-col md:p-8 2xl:gap-0">
+      <div className="flex flex-col justify-center md:ml-3 ml-1 gap-4 flex-1">
         <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-none md:leading-normal">
           Our Products
         </h1>
   
-        <p className="p-regular-20 md:p-regular-24">
+        <p className="p-regular-14 md:p-regular-24">
           Discover our OM Millstones, available in 400MM, 500MM, 600MM, and
           800MM sizes—crafted from strong, organic materials for durability
           and precision.
