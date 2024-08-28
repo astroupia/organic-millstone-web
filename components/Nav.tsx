@@ -1,50 +1,20 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { NAV_LINKS as links } from '@/constants';
 import Link from 'next/link';
 import Image from 'next/image';
-import {
-  Menu,
-  X,
-} from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-
-
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
   const path = usePathname();
-  const [scrolled, setScrolled] = useState(false);
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener on unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-
 
   return (
-    <div className={`${  scrolled ? 'backdrop-blur-xl bg-white/30' : 'bg-white'}  flex justify-between items-center w-full h-20 px-4 fixed nav z-[1000] `}>
+    <div className="bg-white flex justify-between items-center w-full h-20 px-4 absolute top-0 left-0 z-[2000]">
       <div className='md:ml-10 ml-5'>
-       
-         
-            <Image src = "/assets/images/Om.png" height={70} width={85} alt="logo" />
-         
-        
+        <Image src="/assets/images/Om.png" height={70} width={85} alt="logo" />
       </div>
 
       <ul className="hidden md:flex">
@@ -53,7 +23,6 @@ const Nav = () => {
             key={label}
             className={`nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-black duration-200 link-underline ${
               path === route ? 'text-green-600' : 'text-black'
-          
             }`}
           >
             <Link href={route}>{label}</Link>
@@ -74,7 +43,7 @@ const Nav = () => {
             <li
               key={label}
               className={`px-4 cursor-pointer capitalize py-4 text-base ${
-                path === route ? 'green-600' : 'text-gray-500'
+                path === route ? 'text-green-600' : 'text-gray-500'
               }`}
             >
               <Link onClick={() => setNav(!nav)} href={route}>

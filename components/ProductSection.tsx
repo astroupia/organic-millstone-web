@@ -3,13 +3,13 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import DummyContent from "@/components/AppleCardContent";
+import DummyContent from "@/components/VerticanMillContent";
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Organic Millstone",
+    title: "Vertical Millstone",
+    src: "/assets/images/vertical-mill.jpg",
     content: <DummyContent />,
   },
   {
@@ -64,7 +64,7 @@ const ProductPage = () => {
           and precision.
         </p>
         <Button size="lg" asChild className="w-full sm:w-fit bg-green-700">
-          <Link href="#contact">Contact</Link>
+          <Link href="#contact">Explore</Link>
         </Button>
       </div>
       <div className="flex-1">
