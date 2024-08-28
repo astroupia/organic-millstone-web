@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const DummyContent = () => {
+const VmContent = () => {
   return (
     <>
       {/* First unique div */}
@@ -86,4 +86,4 @@ const DummyContent = () => {
   );
 };
 
-export default DummyContent;
+export default VmContent;
