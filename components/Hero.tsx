@@ -8,14 +8,14 @@ const Hero = () => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <video
-        className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
-        src="/assets/Videos/Hero Vid.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
+      <div className="relative w-full h-screen">
+  <img
+    src="/assets/images/om-hero.jpeg"
+    alt="Hero Background"
+    className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+  />
+</div>
+
       <div className="relative z-10 flex flex-col justify-center items-start h-full text-left text-white bg-black bg-opacity-75 px-4">
         <div className="md:ml-5 ml-2 ">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-none md:leading-normal">
