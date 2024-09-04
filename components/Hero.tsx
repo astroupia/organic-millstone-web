@@ -20,9 +20,13 @@ const Hero = () => {
         <div className="md:ml-5 ml-2">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-none md:leading-normal">
             Organic Grinding
-            <br /> for a <FlipWords words={words} className="text-green-500" /> Future
+            <br /> for a <FlipWords
+              words={words}
+              className="text-green-500"
+            />{" "}
+            Future
           </h1>
-          <p className="text-base md:text-lg mb-6">
+          <p className="text-base md:text-lg mb-6 md:max-w-[57%]">
             With over 50 years of expertise, we've rebranded to lead the way in
             providing organic, bio-sustainable millstones. Our mission is to
             replace hazardous food production methods with our state-of-the-art,
@@ -42,4 +46,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
