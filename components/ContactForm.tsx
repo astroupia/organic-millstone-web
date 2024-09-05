@@ -21,7 +21,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-12 md:py-24 px-5">
+    <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 pt-18 py-12 md:py-24 px-5">
       <div className="flex items-center justify-center">
         <Image
           src="/assets/images/contact-image.jpeg"
