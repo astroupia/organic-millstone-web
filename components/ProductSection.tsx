@@ -54,9 +54,12 @@ const ProductPage = () => {
           </h1>
 
           <p className="p-regular-14 md:p-regular-24">
-            Discover our OM Millstones, available in 400MM, 500MM, 600MM, and
-            800MM sizes—crafted from strong, organic materials for durability
-            and precision.
+            We specialize in producing premium millstones using only organic and
+            strong materials. Our most popular product, the OM Millstone, is
+            renowned for its durability, long-lasting performance, and
+            eco-friendly composition. Available in various sizes—400MM, 500MM,
+            600MM, and 800MM—our millstones ensure superior grinding while
+            protecting your flour from harmful chemicals and contaminants.
           </p>
           <Button size="lg" asChild className="w-full sm:w-fit bg-green-700">
             <Link href="#contact">Explore</Link>
