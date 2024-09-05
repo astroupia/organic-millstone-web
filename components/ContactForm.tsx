@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -27,7 +28,7 @@ export function ContactForm() {
           alt="Contact Image"
           width={500}
           height={500}
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover rounded-xl brightness-75"
           style={{ aspectRatio: "500/500", objectFit: "cover" }}
         />
       </div>
