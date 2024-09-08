@@ -62,81 +62,95 @@ const carouselData = [
     content: <HmContent />,
   },
 ];
+
 const ProductsPage = () => {
   const cards = carouselData.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
-    <div className="grid grid-rows-[auto_1fr] min-h-screen">
-      <div className="h-20"></div>{" "}
-      {/* This div acts as a spacer for the fixed nav */}
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">
+    <div className="min-h-screen flex flex-col">
+      <div className="h-20"></div> {/* Spacer for header */}
+      <main className="flex-grow px-4 py-6 md:px-8 md:py-12">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
           Our <FlipWords words={["Products", "Millstones", "Solutions"]} />
         </h1>
 
-        <p className="text-lg text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-sm md:text-base text-center mb-8 max-w-2xl mx-auto">
           We specialize in producing premium millstones using only organic and
           strong materials. Our products ensure superior grinding while
           protecting your flour from harmful chemicals and contaminants.
         </p>
 
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Featured Products</h2>
+        <section className="mb-12">
+          <h2 className="text-xl md:text-3xl font-bold mb-4">
+            Featured Products
+          </h2>
           <Carousel items={cards} />
         </section>
 
-        <section className="mb-16 py-5">
-          <h2 className="text-3xl font-bold mb-8">Product Details</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="mb-12">
+          <h2 className="text-xl md:text-3xl font-bold mb-4">
+            Product Details
+          </h2>
+          <div className="space-y-6 md:space-y-8">
             {productData.map((product, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6"
+                className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-4"
               >
-                <h3 className="text-2xl font-semibold mb-2">{product.title}</h3>
-                <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                <h3 className="text-lg md:text-xl font-semibold mb-2">
+                  {product.title}
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-300 mb-2">
                   {product.category}
                 </p>
                 <img
                   src={product.src}
                   alt={product.title}
-                  className="w-full h-40 object-cover rounded-md mb-4"
+                  className="w-full h-48 object-cover rounded-md mb-3"
                 />
-                <div className="text-sm">{product.content}</div>
+                <div className="text-sm md:text-base">{product.content}</div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {newProductData.map((product, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6"
-            >
-              <h3 className="text-2xl font-semibold mb-2">{product.title}</h3>
-              <p className="text-neutral-600 dark:text-neutral-300 mb-4">
-                {product.category}
-              </p>
-              <img
-                src={product.src}
-                alt={product.title}
-                className="w-full h-40 object-cover rounded-md mb-4"
-              />
-              {/* <div className="text-sm">{product.content}</div> */}
-            </div>
-          ))}
+        <section className="mb-12">
+          <h2 className="text-xl md:text-3xl font-bold mb-4">
+            Additional Products
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {newProductData.map((product, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-4"
+              >
+                <h3 className="text-lg md:text-xl font-semibold mb-2">
+                  {product.title}
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-300 mb-2">
+                  {product.category}
+                </p>
+                <img
+                  src={product.src}
+                  alt={product.title}
+                  className="w-full h-48 object-cover rounded-md mb-3"
+                />
+              </div>
+            ))}
+          </div>
         </section>
 
-        <section className="text-center m-2 py-5">
-          <h2 className="text-3xl font-bold mb-4">Ready to Order?</h2>
-          <Button asChild size="lg" className="mt-4">
+        <section className="text-center">
+          <h2 className="text-xl md:text-3xl font-bold mb-4">
+            Ready to Order?
+          </h2>
+          <Button asChild size="lg">
             <Link href="/contact">Contact Us</Link>
           </Button>
         </section>
-      </div>
+      </main>
     </div>
   );
 };
