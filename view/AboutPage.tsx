@@ -1,7 +1,7 @@
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Timeline } from "@/components/ui/timeline";
-import { Card } from "@/components/ui/apple-cards-carousel";
+import { Card, Carousel } from "@/components/ui/apple-cards-carousel";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -84,52 +84,58 @@ const teamMembers = [
 ];
 
 const AboutPage = () => {
-  return (
-    <div className="min-h-screen grid grid-rows-[auto_1fr]">
-      <div className="h-20"></div> {/* Spacer for fixed nav */}
-      <main className="px-4 py-6 md:px-8 md:py-12">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
-          About <FlipWords words={["Us", "Our Mission", "Our Team"]} />
-        </h1>
-
-        <p className="text-sm md:text-base text-center mb-8 max-w-2xl mx-auto">
-          We are redefining the standards of food production with a strong
-          commitment to sustainability and health. With a rich history spanning
-          over 50 years, we have recently rebranded to focus on delivering
-          organic and bio-sustainable mill parts and millstones.
-        </p>
-
-        <Timeline data={timelineData} />
-
-        <section className="mt-12">
-          <h2 className="text-xl md:text-3xl font-bold text-center mb-6">
-            Our Team
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-lg p-8 object-cover mb-2"
-                />
-                <h3 className="font-semibold text-lg">{member.name}</h3>
-                <p className="text-sm text-gray-600">{member.role}</p>
-              </div>
-            ))}
+  const teamMemberCards = teamMembers.map((member, index) => (
+    <Card
+      key={member.name}
+      card={{
+        src: member.image,
+        title: member.name,
+        category: member.role,
+        content: (
+          <div className="flex flex-col p-4 items-center">
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-24 h-24 rounded-full object-cover mb-2"
+            />
+            <h3 className="font-semibold text-lg">{member.name}</h3>
+            <p className="text-sm text-gray-600">{member.role}</p>
           </div>
-        </section>
+        ),
+      }}
+      index={index}
+    />
+  ));
 
-        <section className="text-center mt-12">
-          <h2 className="text-xl md:text-3xl font-bold mb-4">
-            Ready to Learn More?
-          </h2>
-          <Button asChild size="lg">
+  return (
+    <section id="AboutSection" className="py-5 md:py-10">
+      <div className="p-5 flex flex-col md:p-8 2xl:gap-0">
+        <div className="flex flex-col justify-center md:ml-3 ml-1 gap-4 flex-1">
+          <div className="h-10"></div> {/* Spacer for header */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-none md:leading-normal">
+            About <FlipWords words={["Us", "Our Mission", "Our Team"]} />
+          </h1>
+          <p className="p-regular-14 md:p-regular-24">
+            We are redefining the standards of food production with a strong
+            commitment to sustainability and health. With a rich history
+            spanning over 50 years, we have recently rebranded to focus on
+            delivering organic and bio-sustainable mill parts and millstones.
+          </p>
+          <Button size="lg" asChild className="w-full sm:w-fit bg-green-700">
             <Link href="/contact">Contact Us</Link>
           </Button>
-        </section>
-      </main>
-    </div>
+        </div>
+
+        <div className="flex-1 mt-8">
+          <Timeline data={timelineData} />
+        </div>
+
+        <div className="flex-1 mt-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Our Team</h2>
+          <Carousel items={teamMemberCards} />
+        </div>
+      </div>
+    </section>
   );
 };
 
