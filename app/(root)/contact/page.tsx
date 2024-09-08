@@ -11,8 +11,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 
-const ContactPage = () => {
+const page = () => {
   return <ContactForm />;
 };
 
-export default ContactPage;
+export default page;

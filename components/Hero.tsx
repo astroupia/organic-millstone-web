@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Hero = () => {
-  const words = ["better", "Greater", "Excellent", "modern"];
+  const words = ["Better", "Greater", "Excellent", "Modern"];
 
   return (
     <div className="relative w-full h-screen overflow-hidden">

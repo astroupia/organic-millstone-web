@@ -3,7 +3,7 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import VmContent from "@/components/VerticanMillContent";
+import VmContent from "@/components/VerticalMillContent";
 import HmContent from "./HorizontalMillContent";
 
 const data = [
@@ -22,14 +22,14 @@ const data = [
   {
     category: "Shaft",
     title: "Strong Shaft for your millstone ",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/assets/images/shaft.jpg",
     content: <HmContent />,
   },
 
   {
-    category: "Product",
+    category: "Dinamo",
     title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/assets/images/dinamo.png",
     content: <HmContent />,
   },
   {

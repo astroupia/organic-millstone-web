@@ -35,7 +35,10 @@ const Footer: React.FC = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://organicmilestone.com/" className="flex items-center">
+            <a
+              href="https://organicmilestone.com/"
+              className="flex items-center"
+            >
               <Image
                 src="/assets/images/Om.png"
                 height={64}
@@ -72,7 +75,7 @@ const Footer: React.FC = () => {
             <a href="https://organicmilestone.com/" className="hover:underline">
               Organic Milestone™
             </a>
-            . All Rights Reserved.
+            . All Rights Reserved. Developed by Zenon-X
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
