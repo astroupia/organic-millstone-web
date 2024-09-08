@@ -3,7 +3,7 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import VmContent from "@/components/VerticalMillContent";
+import VmContent from "@/components/VerticanMillContent";
 import HmContent from "./HorizontalMillContent";
 
 const data = [
@@ -29,7 +29,7 @@ const data = [
   {
     category: "Dinamo",
     title: "Maps for your iPhone 15 Pro Max.",
-    src: "/assets/images/dinamo.png",
+    src: "/assets/images/dinamo.pngs",
     content: <HmContent />,
   },
   {

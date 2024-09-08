@@ -85,47 +85,50 @@ const teamMembers = [
 
 const AboutPage = () => {
   return (
-    <div className="grid grid-rows-[auto_1fr] min-h-screen">
-      <div className="h-20"></div>{" "}
-      {/* This div acts as a spacer for the fixed nav */}
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">
+    <div className="min-h-screen grid grid-rows-[auto_1fr]">
+      <div className="h-20"></div> {/* Spacer for fixed nav */}
+      <main className="px-4 py-6 md:px-8 md:py-12">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
           About <FlipWords words={["Us", "Our Mission", "Our Team"]} />
         </h1>
-        <p className="text-lg text-center mb-12 max-w-2xl mx-auto">
+
+        <p className="text-sm md:text-base text-center mb-8 max-w-2xl mx-auto">
           We are redefining the standards of food production with a strong
           commitment to sustainability and health. With a rich history spanning
           over 50 years, we have recently rebranded to focus on delivering
-          organic and bio-sustainable mill parts and millstones. Our journey has
-          been driven by a singular mission: to replace traditional, hazardous
-          methods of food and flour production with safer, eco-friendly
-          alternatives.
+          organic and bio-sustainable mill parts and millstones.
         </p>
+
         <Timeline data={timelineData} />
-        <section className="py-6">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
-          <div className="py-6 flex flex-wrap justify-center gap-8">
+
+        <section className="mt-12">
+          <h2 className="text-xl md:text-3xl font-bold text-center mb-6">
+            Our Team
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
-              <Card
-                key={index}
-                card={{
-                  src: member.image,
-                  title: member.name,
-                  category: member.role,
-                  content: <p>Team member bio goes here.</p>,
-                }}
-                index={index}
-              />
+              <div key={index} className="flex flex-col items-center">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-24 h-24 rounded-lg p-8 object-cover mb-2"
+                />
+                <h3 className="font-semibold text-lg">{member.name}</h3>
+                <p className="text-sm text-gray-600">{member.role}</p>
+              </div>
             ))}
           </div>
         </section>
-        <section className="text-center py-6">
-          <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
-          <Button asChild size="lg" className="mt-4">
+
+        <section className="text-center mt-12">
+          <h2 className="text-xl md:text-3xl font-bold mb-4">
+            Ready to Learn More?
+          </h2>
+          <Button asChild size="lg">
             <Link href="/contact">Contact Us</Link>
           </Button>
         </section>
-      </div>
+      </main>
     </div>
   );
 };
