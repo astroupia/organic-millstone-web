@@ -82,10 +82,8 @@ const ProductsPage = () => {
           protecting your flour from harmful chemicals and contaminants.
         </p>
 
-        <section className="mb-12">
-          <h2 className="text-xl md:text-3xl font-bold mb-4">
-            Featured Products
-          </h2>
+        <section className="mt-4">
+          <h2 className="text-xl md:text-3xl font-bold">Featured Products</h2>
           <Carousel items={cards} />
         </section>
 
@@ -110,17 +108,19 @@ const ProductsPage = () => {
                   alt={product.title}
                   className="w-full h-48 object-cover rounded-md mb-3"
                 />
-                <div className="text-sm md:text-base">{product.content}</div>
+                <div className="text-sm py-4 md:text-base">
+                  {product.content}
+                </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="mb-12">
+        <section className="mb-12 py-6">
           <h2 className="text-xl md:text-3xl font-bold mb-4">
             Additional Products
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
             {newProductData.map((product, index) => (
               <div
                 key={index}
@@ -142,7 +142,7 @@ const ProductsPage = () => {
           </div>
         </section>
 
-        <section className="text-center">
+        <section className="text-center py-6">
           <h2 className="text-xl md:text-3xl font-bold mb-4">
             Ready to Order?
           </h2>
