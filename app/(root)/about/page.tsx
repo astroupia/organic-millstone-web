@@ -1,9 +1,8 @@
-import React from 'react'
+import AboutPage from "@/view/AboutPage";
+import React from "react";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <AboutPage />;
+};
 
-export default page
+export default page;
