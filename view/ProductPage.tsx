@@ -91,7 +91,7 @@ const ProductsPage = () => {
           <h2 className="text-xl md:text-3xl font-bold mb-4">
             Product Details
           </h2>
-          <div className="space-y-6 md:space-y-8">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
             {productData.map((product, index) => (
               <div
                 key={index}
