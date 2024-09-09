@@ -72,18 +72,22 @@ const ProductsPage = () => {
     <div className="min-h-screen flex flex-col">
       <div className="h-20"></div> {/* Spacer for header */}
       <main className="flex-grow px-4 py-6 md:px-8 md:py-12">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
-          Our <FlipWords words={["Products", "Millstones", "Solutions"]} />
-        </h1>
+        <div className="md:px-10 md:py-10 p-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+            Our <FlipWords words={["Products", "Millstones", "Solutions"]} />
+          </h1>
 
-        <p className="text-sm md:text-base text-center mb-8 max-w-2xl mx-auto">
-          We specialize in producing premium millstones using only organic and
-          strong materials. Our products ensure superior grinding while
-          protecting your flour from harmful chemicals and contaminants.
-        </p>
+          <p className="text-sm md:text-base text-center mb-8 max-w-2xl mx-auto">
+            We specialize in producing premium millstones using only organic and
+            strong materials. Our products ensure superior grinding while
+            protecting your flour from harmful chemicals and contaminants.
+          </p>
+        </div>
 
-        <section className="mt-4">
-          <h2 className="text-xl md:text-3xl font-bold">Featured Products</h2>
+        <section className="md:px-10 p-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+            Featured Products
+          </h2>
           <Carousel items={cards} />
         </section>
 

@@ -110,12 +110,12 @@ const AboutPage = () => {
   return (
     <section id="AboutSection" className="py-5 md:py-10">
       <div className="p-5 flex flex-col md:p-8 2xl:gap-0">
-        <div className="flex flex-col justify-center md:ml-3 ml-1 gap-4 flex-1">
+        <div className="flex flex-col justify-center md:p-10 md:ml-3 ml-1 gap-4 flex-1">
           <div className="h-10"></div> {/* Spacer for header */}
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-none md:leading-normal">
+          <h1 className="text-4xl md:text-5xl font-bold mb-1 leading-none md:leading-normal">
             About <FlipWords words={["Us", "Our Mission", "Our Team"]} />
           </h1>
-          <p className="p-regular-14 md:p-regular-24">
+          <p className="p-regular-14 md:p-regular-24 ">
             We are redefining the standards of food production with a strong
             commitment to sustainability and health. With a rich history
             spanning over 50 years, we have recently rebranded to focus on
