@@ -58,6 +58,20 @@ const timelineData = [
       </p>
     ),
   },
+  {
+    title: "Our Values",
+    content: (
+      <p className="text-neutral-700 dark:text-neutral-300">
+        At the core of our business are values that guide every decision we
+        make: integrity in our dealings, excellence in our products, innovation
+        in our approach, and respect for our environment and communities. We
+        believe in transparency, continuous improvement, and fostering a culture
+        of collaboration both within our team and with our partners and
+        customers. These values are not just words, but principles we live by
+        every day.
+      </p>
+    ),
+  },
 ];
 
 const teamMembers = [
