@@ -57,7 +57,7 @@ const carouselData = [
   },
   {
     category: "Dinamo",
-    title: "Strong and Reliable motor",
+    title: "Strong and Reliable Motor",
     src: "/assets/images/dinamo.png",
     content: <HmContent />,
   },
