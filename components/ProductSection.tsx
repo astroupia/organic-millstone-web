@@ -3,7 +3,7 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import VmContent from "@/components/VerticanMillContent";
+import VmContent from "@/components/VerticalMillContent";
 import HmContent from "./HorizontalMillContent";
 
 const data = [

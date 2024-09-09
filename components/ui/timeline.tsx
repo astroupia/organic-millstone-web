@@ -37,8 +37,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-12 px-4 md:px-8 lg:px-10">
-        <h2 className="text-2xl md:text-4xl mb-2 text-black dark:text-white max-w-4xl">
+      <div className="max-w-7xl mx-auto py-5 px-4 md:px-8 lg:px-10">
+        <h2 className="text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Why Choose Us
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
@@ -54,7 +54,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="flex justify-start pt-8 md:pt-16 md:gap-6"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-20 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-8 absolute left-3 md:left-3 w-8 rounded-full bg-white dark:bg-black flex items-center justify-center">
+              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-3 w-3 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700" />
               </div>
               <h3 className="hidden md:block text-lg md:pl-16 md:text-4xl font-bold text-neutral-500 dark:text-neutral-500">
