@@ -70,10 +70,10 @@ const ProductsPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="h-20"></div> {/* Spacer for header */}
+      <div className="h-5"></div> {/* Spacer for header */}
       <main className="flex-grow px-4 py-6 md:px-8 md:py-12">
         <div className="md:px-10 md:py-10 p-4">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-1 leading-none md:leading-normal">
             Our <FlipWords words={["Products", "Millstones", "Solutions"]} />
           </h1>
 
