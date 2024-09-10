@@ -125,7 +125,7 @@ const AboutPage = () => {
     <section id="AboutSection" className="py-5 md:py-10">
       <div className="p-5 flex flex-col md:p-8 2xl:gap-0">
         <div className="flex flex-col justify-center md:p-10 md:ml-3 ml-1 gap-4 flex-1">
-          <div className="h-10"></div> {/* Spacer for header */}
+          {/* <div className="h-10"></div> Spacer for header */}
           <h1 className="text-4xl md:text-5xl font-bold mb-1 leading-none md:leading-normal">
             About <FlipWords words={["Us", "Our Mission", "Our Team"]} />
           </h1>
@@ -140,12 +140,14 @@ const AboutPage = () => {
           </Button>
         </div>
 
-        <div className="flex-1 mt-8">
+        <div id="commitments" className="flex-1 mt-8">
           <Timeline data={timelineData} />
         </div>
 
         <div className="flex-1 mt-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Our Team</h2>
+          <h2 id="teams" className="text-2xl md:text-3xl font-bold mb-6">
+            Our Team
+          </h2>
           <Carousel items={teamMemberCards} />
         </div>
       </div>
