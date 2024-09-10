@@ -60,10 +60,10 @@ const Footer: React.FC = () => {
               ]}
             />
             <FooterList
-              title="Legal"
+              title="Internal Information"
               links={[
-                { label: "Privacy Policy", href: "#" },
-                { label: "Terms & Conditions", href: "#" },
+                { label: "Teams", href: "/about#teams" },
+                { label: "Commitments", href: "/about#commitments" },
               ]}
             />
           </div>
