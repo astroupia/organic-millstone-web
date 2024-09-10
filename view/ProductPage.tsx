@@ -5,6 +5,7 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import VmContent from "@/components/VerticalMillContent";
 import HmContent from "@/components/HorizontalMillContent";
 import { FlipWords } from "@/components/ui/flip-words";
+import HeroCarousel from "@/components/HeroCarousel";
 
 const productData = [
   {
@@ -71,13 +72,14 @@ const ProductsPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="h-20"></div> {/* Spacer for header */}
+      <HeroCarousel />
       <main className="flex-grow px-4 py-6 md:px-8 md:py-12">
         <div className="md:px-10 md:py-10 p-4">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
             Our <FlipWords words={["Products", "Millstones", "Solutions"]} />
           </h1>
 
-          <p className="text-sm md:text-base text-center mb-8 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base max-w-2xl">
             We specialize in producing premium millstones using only organic and
             strong materials. Our products ensure superior grinding while
             protecting your flour from harmful chemicals and contaminants.
@@ -85,17 +87,17 @@ const ProductsPage = () => {
         </div>
 
         <section className="md:px-10 p-4">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
             Featured Products
           </h2>
           <Carousel items={cards} />
         </section>
 
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-xl md:text-3xl font-bold mb-4">
             Product Details
           </h2>
-          <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {productData.map((product, index) => (
               <div
                 key={index}
@@ -118,13 +120,13 @@ const ProductsPage = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
-        <section className="mb-12 py-6">
+        {/* <section className="mb-12 py-6">
           <h2 className="text-xl md:text-3xl font-bold mb-4">
             Additional Products
           </h2>
-          <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {newProductData.map((product, index) => (
               <div
                 key={index}
@@ -144,9 +146,9 @@ const ProductsPage = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
-        <section className="text-center py-6">
+        <section className="py-6">
           <h2 className="text-xl md:text-3xl font-bold mb-4">
             Ready to Order?
           </h2>
