@@ -53,7 +53,7 @@ const carouselData = [
   {
     category: "Shaft",
     title: "Strong Shaft for your millstone",
-    src: "/assets/images/shaft.jpg",
+    src: "/assets/images/shaft.png",
     content: <HmContent />,
   },
   {
@@ -148,13 +148,29 @@ const ProductsPage = () => {
           </div>
         </section> */}
 
-        <section className="py-6">
-          <h2 className="text-xl md:text-3xl font-bold mb-4">
-            Ready to Order?
-          </h2>
-          <Button asChild size="lg">
-            <Link href="/contact">Contact Us</Link>
-          </Button>
+        <section className="py-12 bg-gradient-to-r from-green-900 via-green-800 to-green-600 text-white rounded-lg shadow-xl">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
+              Ready to Experience Our Premium Products?
+            </h2>
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+              Take the next step towards enhancing your milling process. Our
+              team is eager to assist you in finding the perfect solution for
+              your needs.
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-white text-green-600 hover:bg-green-100 transition-colors duration-300 animate-bounce"
+            >
+              <Link
+                href="/contact"
+                className="px-8 py-3 rounded-full font-semibold text-lg"
+              >
+                Get in Touch Today
+              </Link>
+            </Button>
+          </div>
         </section>
       </main>
     </div>

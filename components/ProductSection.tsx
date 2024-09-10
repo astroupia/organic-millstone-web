@@ -41,7 +41,7 @@ const ProductPage = () => {
   ));
 
   return (
-    <section id="ProductSection" className="py-5 md:py-10">
+    <section id="ProductSection" className="pt-5 md:py-10">
       <div className="p-5 flex flex-col md:p-8 2xl:gap-0">
         <div className="flex flex-col justify-center md:ml-3 ml-1 gap-4 flex-1">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-none md:leading-normal">
