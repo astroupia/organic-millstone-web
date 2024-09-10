@@ -53,7 +53,7 @@ const carouselData = [
   {
     category: "Shaft",
     title: "Strong Shaft for your millstone",
-    src: "/assets/images/shaft.png",
+    src: "/assets/images/shaft.jpg",
     content: <HmContent />,
   },
   {
