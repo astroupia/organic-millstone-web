@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import VmContent from "@/components/VerticalMillContent";
 import HmContent from "./HorizontalMillContent";
+import ShaftContent from "./ShaftContent";
 
 const data = [
   {
@@ -23,7 +24,7 @@ const data = [
     category: "Shaft",
     title: "Strong Shaft for your millstone ",
     src: "/assets/images/shaft.jpg",
-    content: <HmContent />,
+    content: <ShaftContent />,
   },
 
   {
@@ -56,7 +57,7 @@ const ProductPage = () => {
             protecting your flour from harmful chemicals and contaminants.
           </p>
           <Button size="lg" asChild className="w-full sm:w-fit bg-green-700">
-            <Link href="#contact">Explore</Link>
+            <Link href="/product">Explore</Link>
           </Button>
         </div>
         <div className="flex-1 mt-[5]">
