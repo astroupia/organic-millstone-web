@@ -85,16 +85,6 @@ const teamMembers = [
     role: "CBO",
     image: "/assets/images/abebe.jpg",
   },
-  {
-    name: "Aebra Beshama",
-    role: "CTO",
-    image: "/assets/images/abebe.jpg",
-  },
-  {
-    name: "Sharew Abebe",
-    role: "CFO",
-    image: "/assets/images/abebe.jpg",
-  },
 ];
 
 const AboutPage = () => {
