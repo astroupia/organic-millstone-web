@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
             <a href="https://organicmilestone.com/" className="hover:underline">
               Organic Milestone™
             </a>
-            . All Rights Reserved. Developed by Zenon-X
+            . All Rights Reserved. Developed by Sydek
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
