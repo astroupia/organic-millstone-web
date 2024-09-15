@@ -54,9 +54,9 @@ const Footer: React.FC = () => {
             <FooterList
               title="Links"
               links={[
-                { label: "Product", href: "https://organicmilestone.com/" },
-                { label: "About", href: "https://organicmilestone.com/" },
-                { label: "Contact", href: "https://organicmilestone.com/" },
+                { label: "Product", href: "/product" },
+                { label: "About", href: "/about" },
+                { label: "Contact", href: "/contact" },
               ]}
             />
             <FooterList

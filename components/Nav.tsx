@@ -47,7 +47,14 @@ const Nav = () => {
       }`}
     >
       <div className="md:ml-10 ml-5">
-        <Image src="/assets/images/Om.png" height={70} width={85} alt="logo" />
+        <Link href="/">
+          <Image
+            src="/assets/images/Om.png"
+            height={70}
+            width={85}
+            alt="logo"
+          />
+        </Link>
       </div>
 
       <ul className="hidden md:flex">
