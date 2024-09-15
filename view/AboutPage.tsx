@@ -78,7 +78,7 @@ const teamMembers = [
   {
     name: "Bewket Liyew",
     role: "CEO",
-    image: "/assets/images/CEO.jpg",
+    image: "/assets/images/CEO.PNG",
   },
   {
     name: "Biruk Andualem",
