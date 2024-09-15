@@ -76,14 +76,14 @@ const timelineData = [
 
 const teamMembers = [
   {
-    name: "Abebe Demeke",
+    name: "Bewket Liyew",
     role: "CEO",
-    image: "/assets/images/abebe.jpg",
+    image: "/assets/images/CEO.jpg",
   },
   {
-    name: "Abebech Semere",
+    name: "Biruk Andualem",
     role: "CBO",
-    image: "/assets/images/abebech.jpg",
+    image: "/assets/images/abebe.jpg",
   },
   {
     name: "Aebra Beshama",
