@@ -93,14 +93,14 @@ const AboutPage = () => {
       key={member.name}
       card={{
         src: member.image,
-        title: member.name,
-        category: member.role,
+        title: member.role,
+        category: member.name,
         content: (
           <div className="flex flex-col p-4 items-center">
             <img
               src={member.image}
               alt={member.name}
-              className="w-[300px] h-[300px] md:w-[350px] md:w-[350px] rounded-full object-cover"
+              className="w-[300px] h-[300px] rounded-full object-cover"
             />
             <h3 className="text-sm text-gray-600">{member.role}</h3>
             <p className="font-semibold text-lg">{member.name}</p>

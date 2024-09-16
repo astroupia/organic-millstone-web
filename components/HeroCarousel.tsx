@@ -25,7 +25,7 @@ const slides = [
       "Our Vertical Millstone combines traditional design with modern efficiency for superior flour production.",
   },
   {
-    image: "/assets/images/shaft.png",
+    image: "/assets/images/shaft.jpg",
     alt: "Shaft",
     title: "Shaft",
     description:

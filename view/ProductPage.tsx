@@ -6,6 +6,8 @@ import VmContent from "@/components/VerticalMillContent";
 import HmContent from "@/components/HorizontalMillContent";
 import { FlipWords } from "@/components/ui/flip-words";
 import HeroCarousel from "@/components/HeroCarousel";
+import ShaftContent from "@/components/ShaftContent";
+import DnContent from "@/components/DinamoContent";
 
 const productData = [
   {
@@ -42,25 +44,25 @@ const carouselData = [
     category: "Organic Millstone",
     title: "Vertical Millstone",
     src: "/assets/images/vertical-mill.jpg",
-    content: <HmContent />,
+    content: <VmContent />,
   },
   {
     category: "Organic Millstone",
     title: "Horizontal Millstone",
     src: "/assets/images/horizontal-mill.jpeg",
-    content: <VmContent />,
+    content: <HmContent />,
   },
   {
     category: "Shaft",
     title: "Strong Shaft for your millstone",
     src: "/assets/images/shaft.jpg",
-    content: <HmContent />,
+    content: <ShaftContent />,
   },
   {
     category: "Dinamo",
     title: "Strong and Reliable Motor",
     src: "/assets/images/dinamo.png",
-    content: <HmContent />,
+    content: <DnContent />,
   },
 ];
 

@@ -6,6 +6,7 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import VmContent from "@/components/VerticalMillContent";
 import HmContent from "./HorizontalMillContent";
 import ShaftContent from "./ShaftContent";
+import DnContent from "./DinamoContent";
 
 const data = [
   {
@@ -31,7 +32,7 @@ const data = [
     category: "Dinamo",
     title: "Strong and Reliable Motor",
     src: "/assets/images/dinamo.png",
-    content: <HmContent />,
+    content: <DnContent />,
   },
 ];
 
