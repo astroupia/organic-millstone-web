@@ -100,7 +100,7 @@ const AboutPage = () => {
             <img
               src={member.image}
               alt={member.name}
-              className="w-[300px] h-[300px] md:w-[350px] md:w-[350px] rounded-full object-cover mb-2"
+              className="w-[300px] h-[300px] md:w-[350px] md:w-[350px] rounded-full object-cover mr-3 mt-3"
             />
             <h3 className="font-semibold text-lg">{member.name}</h3>
             <p className="text-sm text-gray-600">{member.role}</p>
