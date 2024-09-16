@@ -81,9 +81,9 @@ const teamMembers = [
     image: "/assets/images/CEO.PNG",
   },
   {
-    name: "Biruk Andualem",
+    name: "Biruk Eskezia",
     role: "Product Manager",
-    image: "/assets/images/abebe.jpg",
+    image: "/assets/images/product manager.jpg",
   },
 ];
 
@@ -102,8 +102,8 @@ const AboutPage = () => {
               alt={member.name}
               className="w-[300px] h-[300px] md:w-[350px] md:w-[350px] rounded-full object-cover"
             />
-            <h3 className="font-semibold text-lg">{member.name}</h3>
-            <p className="text-sm text-gray-600">{member.role}</p>
+            <h3 className="text-sm text-gray-600">{member.role}</h3>
+            <p className="font-semibold text-lg">{member.name}</p>
           </div>
         ),
       }}
