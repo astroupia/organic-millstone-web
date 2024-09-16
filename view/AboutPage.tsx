@@ -82,7 +82,7 @@ const teamMembers = [
   },
   {
     name: "Biruk Eskezia",
-    role: "Product Manager",
+    role: "CBO",
     image: "/assets/images/product manager.jpg",
   },
 ];
