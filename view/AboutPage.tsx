@@ -102,8 +102,8 @@ const AboutPage = () => {
               alt={member.name}
               className="w-[300px] h-[300px] rounded-full object-cover"
             />
-            <h3 className="text-sm text-gray-600">{member.role}</h3>
-            <p className="font-semibold text-lg">{member.name}</p>
+            <h3 className="font-semibold text-lg">{member.name}</h3>
+            <p className="text-sm text-gray-600">{member.role}</p>
           </div>
         ),
       }}
