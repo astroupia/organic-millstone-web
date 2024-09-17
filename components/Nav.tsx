@@ -53,7 +53,7 @@ const Nav = () => {
             height={80}
             width={85}
             alt="logo"
-            layout="intrinsic"
+            unoptimized
           />
         </Link>
       </div>
