@@ -50,9 +50,10 @@ const Nav = () => {
         <Link href="/">
           <Image
             src="/assets/images/Om.png"
-            height={70}
+            height={80}
             width={85}
             alt="logo"
+            layout="intrinsic"
           />
         </Link>
       </div>
