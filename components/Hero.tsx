@@ -8,14 +8,14 @@ const Hero = () => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Hero Image */}
+      {/* Hero img */}
       <img
         src="/assets/images/om-hero.jpeg"
         alt="Hero Background"
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       />
 
-      {/* Flex Container to hold both text and image */}
+      {/* Flex Container to hold both text and img */}
       <div className="relative flex flex-col justify-center items-start h-full text-left text-white bg-black bg-opacity-75 px-4 z-10">
         <div className="md:ml-5 ml-2">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-none md:leading-normal">

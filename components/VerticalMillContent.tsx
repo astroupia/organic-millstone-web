@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const DummyContent = () => {
@@ -16,7 +15,7 @@ const DummyContent = () => {
           Its precise design ensures efficient grinding, preserving the
           nutritional value and natural taste of the grains.
         </p>
-        <Image
+        <img
           src="/assets/images/v1.png"
           alt="Vertical millstone"
           height="500"
@@ -36,7 +35,7 @@ const DummyContent = () => {
           efficient and quick grinding while maintaining the natural nutrients
           of the grains.
         </p>
-        <Image
+        <img
           src="/assets/images/v2.png"
           alt="Vertical millstone"
           height="500"
@@ -55,7 +54,7 @@ const DummyContent = () => {
           needs. With a robust build and larger diameter, it ensures efficient
           grinding for high-quality, nutritious flour.
         </p>
-        <Image
+        <img
           src="/assets/images/v3.png"
           alt="Vertical millstone"
           height="500"
@@ -74,7 +73,7 @@ const DummyContent = () => {
           looking for the utmost quality and capacity. Its advanced design
           ensures the highest efficiency and preservation of grain nutrients.
         </p>
-        <Image
+        <img
           src="/assets/images/v4.png"
           alt="Vertical millstone"
           height="500"

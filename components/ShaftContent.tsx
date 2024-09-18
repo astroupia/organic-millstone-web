@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 const ShaftContent = () => {
   return (
     <>
@@ -19,7 +18,7 @@ const ShaftContent = () => {
           fit different millstone configurations, our shaft is the perfect
           choice for both small-scale and industrial milling setups.
         </p>
-        <Image
+        <img
           src="/assets/images/shaft.jpg"
           alt="shaft"
           height="500"

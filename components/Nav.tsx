@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { NAV_LINKS as links } from "@/constants";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -48,13 +47,7 @@ const Nav = () => {
     >
       <div className="md:ml-10 ml-5">
         <Link href="/">
-          <Image
-            src="/assets/images/Om.png"
-            height={80}
-            width={85}
-            alt="logo"
-            unoptimized
-          />
+          <img src="/assets/images/Om.png" height={80} width={85} alt="logo" />
         </Link>
       </div>
 

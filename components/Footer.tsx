@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Instagram, Youtube, Send } from "lucide-react"; // Using Send icon as a representation for Telegram
 
 interface FooterLink {
@@ -39,7 +38,7 @@ const Footer: React.FC = () => {
               href="https://organicmilestone.com/"
               className="flex items-center"
             >
-              <Image
+              <img
                 src="/assets/images/Om.png"
                 height={64}
                 width={64}

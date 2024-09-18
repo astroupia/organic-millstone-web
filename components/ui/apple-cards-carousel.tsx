@@ -13,7 +13,6 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/components/ui/hooks/use-outside-click";
 
 interface CarouselProps {
@@ -98,7 +97,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         >
           <div
             className={cn(
-              "absolute right-0  z-[1000] h-auto  w-[5%] overflow-hidden bg-gradient-to-l"
+              "absolute right-0 z-[1000] h-auto w-[5%] overflow-hidden bg-gradient-to-l"
             )}
           ></div>
 
@@ -110,6 +109,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           >
             {items.map((item, index) => (
               <motion.div
+                key={"card" + index}
                 initial={{
                   opacity: 0,
                   y: 20,
@@ -124,8 +124,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                     once: true,
                   },
                 }}
-                key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
+                className="last:pr-[5%] md:last:pr-[33%] rounded-3xl"
               >
                 {item}
               </motion.div>
@@ -245,7 +244,7 @@ export const Card = ({
         <div className="relative z-40 md:p-8 p-3">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className=/*"text-white text-sm md:text-base font-medium font-sans text-left*/ "text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
           >
             {card.category}
           </motion.p>
@@ -256,42 +255,12 @@ export const Card = ({
             {card.title}
           </motion.p>
         </div>
-        <BlurImage
+        <img
           src={card.src}
           alt={card.title}
-          fill
-          className="object-cover absolute z-10 inset-0"
+          className="object-cover absolute w-full h-full left-0 top-0"
         />
       </motion.button>
     </>
-  );
-};
-
-export const BlurImage = ({
-  height,
-  width,
-  src,
-  className,
-  alt,
-  ...rest
-}: ImageProps) => {
-  const [isLoading, setLoading] = useState(true);
-  return (
-    <Image
-      className={cn(
-        "transition duration-300",
-        isLoading ? "blur-sm" : "blur-0",
-        className
-      )}
-      onLoad={() => setLoading(false)}
-      src={src}
-      width={width}
-      height={height}
-      loading="lazy"
-      decoding="async"
-      blurDataURL={typeof src === "string" ? src : undefined}
-      alt={alt ? alt : "Background of a beautiful view"}
-      {...rest}
-    />
   );
 };

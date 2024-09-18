@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 
 const slides = [
   {
@@ -60,12 +59,11 @@ const HeroCarousel: React.FC = () => {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          <Image
+          <img
             src={slide.image}
             alt={slide.alt}
-            layout="fill"
-            objectFit="cover"
-            priority
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent flex items-end justify-start">
             <div className="text-left text-white p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 mb-10 w-full">

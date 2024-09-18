@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const DnContent = () => {
@@ -16,7 +15,7 @@ const DnContent = () => {
           output ensures smooth and consistent grinding, making it an ideal
           choice for both home and industrial use.
         </p>
-        <Image
+        <img
           src="/assets/images/dinamo.png"
           alt="dinamo"
           height="500"

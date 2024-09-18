@@ -4,7 +4,6 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import emailjs from "@emailjs/browser";
 
 export function ContactForm() {
@@ -57,9 +56,8 @@ export function ContactForm() {
   return (
     <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 pt-18 py-12 md:py-24 px-5">
       <div className="flex items-center justify-center">
-        <Image
-          src="/assets/images/contact-image.jpeg"
-          alt="Contact Image"
+        <img
+          src="/assets/images/contact-image.png"
           width={500}
           height={500}
           className="w-full h-full object-cover rounded-xl brightness-75"

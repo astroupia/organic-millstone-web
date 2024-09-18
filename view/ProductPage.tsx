@@ -13,13 +13,13 @@ const productData = [
   {
     category: "Organic Millstone",
     title: "Vertical Millstone",
-    src: "/assets/images/vertical-mill.jpg",
+    src: "/assets/imgs/vertical-mill.jpg",
     content: <VmContent />,
   },
   {
     category: "Organic Millstone",
     title: "Horizontal Millstone",
-    src: "/assets/images/horizontal-mill.jpeg",
+    src: "/assets/imgs/horizontal-mill.jpeg",
     content: <HmContent />,
   },
 ];
