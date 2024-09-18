@@ -57,7 +57,7 @@ export function ContactForm() {
     <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 pt-18 py-12 md:py-24 px-5">
       <div className="flex items-center justify-center">
         <img
-          src="/assets/images/contact-image.png"
+          src="/assets/images/contact-image.jpeg"
           width={500}
           height={500}
           className="w-full h-full object-cover rounded-xl brightness-75"
