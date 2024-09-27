@@ -108,7 +108,7 @@ export function ContactForm() {
             />
           </div>
           <Button type="submit" className="w-full" disabled={isSubmitting}>
-            {isSubmitting ? "Sending..." : "Submit"}
+            {isSubmitting ? "Sending...." : "Submit"}
           </Button>
         </form>
       </div>
