@@ -137,14 +137,6 @@ const ProductsPage = () => {
                 <h3 className="text-lg md:text-xl font-semibold mb-2">
                   {product.title}
                 </h3>
-                <p className="text-sm text-neutral-600 dark:text-neutral-300 mb-2">
-                  {product.category}
-                </p>
-                <img
-                  src={product.src}
-                  alt={product.title}
-                  className="w-full h-48 object-cover rounded-md mb-3"
-                />
               </div>
             ))}
           </div>
